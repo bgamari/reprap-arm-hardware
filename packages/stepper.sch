@@ -5,11 +5,11 @@ C 49500 43400 1 0 0 gnd-1.sym
 C 47300 43600 1 0 0 pololu-driver.sym
 {
 T 51300 47700 5 10 1 1 0 6 1
-refdes=U?
+refdes=U1
 T 49200 46000 5 10 0 0 0 0 1
 device=Allegro
 T 49200 46200 5 10 0 0 0 0 1
-footprint=DIP16
+footprint=POLOLUSTEPPER-1
 }
 C 45800 47100 1 0 0 in-1.sym
 {
@@ -40,29 +40,29 @@ N 46400 44400 47400 44400 4
 C 44400 45000 1 0 1 connector2-2.sym
 {
 T 43700 46300 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=MS2
 T 44100 46250 5 10 0 0 0 6 1
 device=CONNECTOR_2
 T 44100 46450 5 10 0 0 0 6 1
-footprint=SIP2N
+footprint=HEADER2_1
 }
 C 44400 46800 1 0 1 connector2-2.sym
 {
 T 43700 48100 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=MS1
 T 44100 48050 5 10 0 0 0 6 1
 device=CONNECTOR_2
 T 44100 48250 5 10 0 0 0 6 1
-footprint=SIP2N
+footprint=HEADER2_1
 }
 C 44400 43300 1 0 1 connector2-2.sym
 {
 T 43700 44600 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=MS3
 T 44100 44550 5 10 0 0 0 6 1
 device=CONNECTOR_2
 T 44100 44750 5 10 0 0 0 6 1
-footprint=SIP2N
+footprint=HEADER2_1
 }
 C 44900 45800 1 90 0 resistor-1.sym
 {
@@ -72,6 +72,8 @@ T 44600 46000 5 10 1 1 90 0 1
 refdes=R2
 T 44600 46300 5 10 1 1 90 0 1
 value=1k
+T 44900 45800 5 10 0 1 0 0 1
+footprint=SMD-CHIP-1206
 }
 C 44900 47600 1 90 0 resistor-1.sym
 {
@@ -81,6 +83,8 @@ T 44600 47800 5 10 1 1 90 0 1
 refdes=R1
 T 44600 48100 5 10 1 1 90 0 1
 value=1k
+T 44900 47600 5 10 0 1 0 0 1
+footprint=SMD-CHIP-1206
 }
 C 44900 44100 1 90 0 resistor-1.sym
 {
@@ -90,6 +94,8 @@ T 44600 44300 5 10 1 1 90 0 1
 refdes=R3
 T 44600 44700 5 10 1 1 90 0 1
 value=1k
+T 44900 44100 5 10 0 1 0 0 1
+footprint=SMD-CHIP-1206
 }
 N 44400 44100 45100 44100 4
 N 45100 44100 45100 45600 4
@@ -109,11 +115,11 @@ C 44600 45000 1 0 0 3.3V-plus-1.sym
 C 52500 45600 1 0 0 connector4-2.sym
 {
 T 53200 47700 5 10 1 1 0 6 1
-refdes=CONN?
+refdes=MOTOR
 T 52800 47650 5 10 0 0 0 0 1
 device=CONNECTOR_4
 T 52800 47850 5 10 0 0 0 0 1
-footprint=SIP4N
+footprint=Combi-4-1
 }
 N 51400 47200 52500 47200 4
 N 51400 46800 52500 46800 4
@@ -131,6 +137,8 @@ T 50200 48800 5 10 0 0 0 0 1
 symversion=0.1
 T 50500 48400 5 10 1 1 0 0 1
 value=0.1u
+T 50000 47900 5 10 0 1 0 0 1
+footprint=SMD-CHIP-1206
 }
 N 50000 48100 49600 48100 4
 C 50800 47800 1 0 0 gnd-1.sym
@@ -146,6 +154,8 @@ T 48600 48800 5 10 0 0 0 6 1
 symversion=0.1
 T 48300 48400 5 10 1 1 0 6 1
 value=0.1u
+T 48800 47900 5 10 0 1 0 0 1
+footprint=SMD-CHIP-1206
 }
 N 48800 48100 49200 48100 4
 C 48000 47800 1 0 1 gnd-1.sym

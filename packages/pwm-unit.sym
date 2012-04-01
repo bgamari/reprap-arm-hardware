@@ -5,7 +5,7 @@ PWM Unit
 P 0 200 400 200 1 0 0
 {
 T -100 200 5 10 0 0 0 0 1
-pintype=unknown
+pintype=in
 T 455 195 5 10 1 1 0 0 1
 pinlabel=IN
 T 305 245 5 10 1 1 0 6 1
@@ -16,7 +16,7 @@ pinseq=0
 P 0 500 400 500 1 0 0
 {
 T 0 500 5 10 0 0 270 6 1
-pintype=unknown
+pintype=pwr
 T 455 495 5 10 1 1 0 0 1
 pinlabel=Vin
 T 305 545 5 10 1 1 0 6 1
@@ -24,3 +24,5 @@ pinnumber=0
 T 0 500 5 10 0 0 270 6 1
 pinseq=0
 }
+T 600 900 8 10 0 1 0 0 1
+source=pwm-unit.sch

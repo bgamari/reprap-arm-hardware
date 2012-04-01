@@ -1,1 +1,2 @@
 (component-library "./packages")
+(source-library "./packages")
