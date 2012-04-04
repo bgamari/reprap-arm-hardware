@@ -16,14 +16,22 @@ clean :
 pcb : symbols
 	gsch2pcb -v project | tee pcb.log
 
-%.ps : %.pcb
+%.ps : %.sch
+	gschem -s /usr/share/gEDA/scheme/print.scm -o ${notdir $@} $<
+
+%-artwork.ps : %.pcb
 	pcb -x ps --psfile $@ $<
+
+%-photo.png : %.pcb
+	pcb -x png --dpi 300 --photo-mode --format PNG --outfile $@ $<
 
 %.pdf : %.ps
 	ps2pdf $< $@
 
+pdfs : board.pdf packages/pwm-unit.pdf packages/stepper.pdf board-artwork.pdf
+
 .PHONY : gerbers
-gerbers : beagle-daq.pcb beagle-daq.bom
+gerbers : board.pcb beagle-daq.bom
 	rm -Rf gerbers
 	mkdir gerbers
 	pcb -x gerber --gerberfile gerbers/beagle-daq $<
