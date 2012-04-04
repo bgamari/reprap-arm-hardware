@@ -1,0 +1,29 @@
+# ARM-based electronics for the RepRap
+
+This is a set of RepRap electronics build around the LPCXpresso
+development board. Many parts of the design were borrowed from the
+excellent [Gen7](http://reprap.org/wiki/Generation_7_Electronics)
+electronics by Traumflaug.
+
+Like Gen7, the design is meant to be fairly easy to manufacture on a
+RepRap. The author will be using a UV laser mounted on the RepRap to
+expose photoresist for etching.
+
+While the design is mostly through-hole, there are a few large (1206)
+surface mount components. Not to worry, however, in the opinion of the
+author, 1206 parts are even easier to solder than axial through-hole
+parts.
+
+## Features
+
+ * Four Pololu stepper motor drivers
+ * Four PWM outputs (for, e.g., heaters)
+ * Three endstops (5V)
+ * Four ADC inputs (for, e.g., temperature sensors)
+ * A few unused pins are brought out to an expansion header
+ 
+## Firmware
+
+While there may be other options I am unaware of, the author suggests
+the [Smoothie](http://smoothieware.org/) firmware, by Arthur Wolf.
+
