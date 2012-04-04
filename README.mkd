@@ -14,6 +14,10 @@ surface mount components. Not to worry, however, in the opinion of the
 author, 1206 parts are even easier to solder than axial through-hole
 parts.
 
+A hopefully up-to-date rendition of the board and its schematics can
+be found in the
+[export branch](https://github.com/bgamari/reprap-arm-hardware/tree/gh-pages/export).
+
 ## Features
 
  * Four Pololu stepper motor drivers
