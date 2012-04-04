@@ -151,8 +151,8 @@ refdes=stepper4
 }
 N 38900 48100 40100 48100 4
 {
-T 39100 48100 5 10 1 1 0 0 1
-netname=stepper_en
+T 39000 48100 5 10 1 1 0 0 1
+netname=stepper0_dir
 }
 N 51100 50600 52300 50600 4
 {
@@ -177,42 +177,42 @@ netname=stepper_en
 N 38900 44900 40100 44900 4
 {
 T 39000 44900 5 10 1 1 0 0 1
-netname=stepper0_dir
+netname=stepper2_dir
 }
 N 38900 44500 40100 44500 4
 {
 T 39000 44500 5 10 1 1 0 0 1
-netname=stepper0_step
+netname=stepper2_step
 }
 N 38900 44100 40100 44100 4
 {
 T 39000 44100 5 10 1 1 0 0 1
-netname=stepper1_dir
+netname=stepper1_step
 }
 N 38900 43700 40100 43700 4
 {
 T 39000 43700 5 10 1 1 0 0 1
-netname=stepper1_step
+netname=stepper1_dir
 }
 N 38900 43300 40100 43300 4
 {
 T 39000 43300 5 10 1 1 0 0 1
-netname=stepper2_dir
+netname=stepper3_dir
 }
 N 38900 42900 40100 42900 4
 {
 T 39000 42900 5 10 1 1 0 0 1
-netname=stepper2_step
+netname=stepper3_step
 }
 N 38900 40900 40100 40900 4
 {
 T 39000 40900 5 10 1 1 0 0 1
-netname=stepper3_dir
+netname=stepper4_dir
 }
 N 38900 40500 40100 40500 4
 {
 T 39000 40500 5 10 1 1 0 0 1
-netname=stepper3_step
+netname=stepper4_step
 }
 N 51100 50100 52300 50100 4
 {
@@ -233,16 +233,6 @@ N 51100 40900 52300 40900 4
 {
 T 51200 40900 5 10 1 1 0 0 1
 netname=stepper3_dir
-}
-N 44100 48100 45300 48100 4
-{
-T 44200 48100 5 10 1 1 0 0 1
-netname=stepper4_dir
-}
-N 44100 47700 45300 47700 4
-{
-T 44200 47700 5 10 1 1 0 0 1
-netname=stepper4_step
 }
 N 51100 40400 52300 40400 4
 {
@@ -286,7 +276,7 @@ refdes=MOTOR_PWR
 T 29100 55050 5 10 0 0 0 6 1
 device=CONNECTOR_4
 T 29100 55250 5 10 0 0 0 6 1
-footprint=SIP4N
+footprint=MOLEX_4_PIN
 }
 C 29700 54100 1 90 0 gnd-1.sym
 C 29700 53700 1 90 0 gnd-1.sym
@@ -302,7 +292,7 @@ refdes=HEAT_PWR
 T 26800 55050 5 10 0 0 0 6 1
 device=CONNECTOR_4
 T 26800 55250 5 10 0 0 0 6 1
-footprint=SIP4N
+footprint=MOLEX_4_PIN
 }
 C 27400 54100 1 90 0 gnd-1.sym
 C 27400 53700 1 90 0 gnd-1.sym
@@ -567,19 +557,19 @@ C 27100 54800 1 270 0 12V-plus-1.sym
 T 27500 54800 5 8 1 1 270 0 1
 net=Vheat:1
 }
-N 44100 44900 44700 44900 4
-{
-T 44300 44900 5 10 1 1 0 0 1
-netname=min_x
-}
-N 44100 44500 44700 44500 4
-{
-T 44300 44500 5 10 1 1 0 0 1
-netname=min_y
-}
 N 44100 44100 44700 44100 4
 {
 T 44300 44100 5 10 1 1 0 0 1
+netname=min_x
+}
+N 44100 43700 44700 43700 4
+{
+T 44300 43700 5 10 1 1 0 0 1
+netname=min_y
+}
+N 44100 43300 44700 43300 4
+{
+T 44300 43300 5 10 1 1 0 0 1
 netname=min_z
 }
 C 48300 53700 1 0 0 connector3-2.sym
@@ -716,10 +706,20 @@ footprint=MJTP1230-1
 }
 C 44300 42900 1 0 0 switch-pushbutton-no-1.sym
 {
-T 44700 43200 5 10 1 1 0 0 1
+T 44900 43100 5 10 1 1 0 0 1
 refdes=PROG
 T 44700 43500 5 10 0 0 0 0 1
 device=SWITCH_PUSHBUTTON_NO
 T 44300 42900 5 10 0 1 270 0 1
 footprint=MJTP1230-1
+}
+N 38900 47700 40100 47700 4
+{
+T 39000 47700 5 10 1 1 0 0 1
+netname=stepper0_step
+}
+N 40100 40100 38900 40100 4
+{
+T 39000 40100 5 10 1 1 0 0 1
+netname=stepper_en
 }

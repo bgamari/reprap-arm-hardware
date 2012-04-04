@@ -1,0 +1,5 @@
+schematics board.sch
+
+output-name board
+skip-m4
+
