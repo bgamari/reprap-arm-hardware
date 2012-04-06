@@ -69,7 +69,7 @@ C 44900 37700 1 0 0 usb-conn.sym
 T 46700 39400 5 10 1 1 0 6 1
 refdes=USB
 T 45850 38900 5 10 0 0 0 0 1
-footprint=USB-B
+footprint=usb-b
 }
 C 46000 37500 1 0 0 gnd-1.sym
 N 44100 38900 45000 38900 4
