@@ -16,7 +16,7 @@ refdes=SD_CARD
 T 38200 46900 5 10 0 0 0 0 1
 device=SD Card
 T 38200 47100 5 10 0 0 0 0 1
-footprint=sdcard
+footprint=sd-card
 }
 C 41800 37500 1 0 0 gnd-1.sym
 C 42300 48800 1 0 0 3.3V-plus-1.sym
@@ -78,24 +78,24 @@ C 31700 54700 1 90 0 3.3V-plus-1.sym
 C 39800 37600 1 0 0 gnd-1.sym
 N 39900 38900 40100 38900 4
 C 45600 43000 1 90 1 gnd-1.sym
-C 52100 44100 1 0 0 stepper.sym
+C 52100 43700 1 0 0 stepper.sym
 {
-T 52100 44100 5 10 0 0 0 0 1
+T 52100 43700 5 10 0 0 0 0 1
 refdes=stepper1
 }
-C 52100 41000 1 0 0 stepper.sym
+C 52100 40600 1 0 0 stepper.sym
 {
-T 52100 41000 5 10 0 0 0 0 1
+T 52100 40600 5 10 0 0 0 0 1
 refdes=stepper2
 }
-C 52100 37900 1 0 0 stepper.sym
+C 52100 37500 1 0 0 stepper.sym
 {
-T 52100 37900 5 10 0 0 0 0 1
+T 52100 37500 5 10 0 0 0 0 1
 refdes=stepper3
 }
-C 52100 47100 1 0 0 stepper.sym
+C 52100 46700 1 0 0 stepper.sym
 {
-T 52100 47100 5 10 0 0 0 0 1
+T 52100 46700 5 10 0 0 0 0 1
 refdes=stepper0
 }
 N 38900 48100 40100 48100 4
@@ -732,3 +732,7 @@ T 47400 51450 5 10 0 0 0 0 1
 footprint=JUMPER6
 }
 C 47100 49000 1 90 0 3.3V-plus-1.sym
+C 51800 46900 1 270 1 gnd-1.sym
+C 51800 43900 1 270 1 gnd-1.sym
+C 51800 37800 1 270 1 gnd-1.sym
+C 51800 40800 1 270 1 gnd-1.sym
